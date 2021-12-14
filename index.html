@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" type="text/css "rel="stylesheet">
+    <link href="css/main.css" type="text/css "rel="stylesheet">
+    <title>pagina boostrap</title>
+</head>
+<body>
+
+    <title>index</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+
+</head>
+<body>
+    <section id="login">
+    <!-- contenedor principal-->
+    <div class="container py-4">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="darkSwitch" checked>
+          <label for="darkSwitch" class="form-check-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+              <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+              <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+            </svg>
+          </label>
+        </div>
+        <div class="row justify-content-center h-100 py=4">
+           <!--aqui va una imagen-->
+           <!--<img src="" alt="logo" class="rounded mx-auto d-block" style="width:250px">-->
+        </div>
+      </div>
+      <div class="row justify-content-center h-100">
+         <div class="col-sm-8 col-md-6 col-lg-6 rounded">
+             <div class="row">
+                <div class="col-sm-10 col-md-12 col-lg-12">
+                  <!--inicia login-->
+                  <form class="needs-validation" novalidate action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+                     <div class="input-group mb-3">
+                        <span class="input-group-text" id="perfil">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                           <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                           <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        </span>
+                          <input type="text" name="usuario" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedaby="Usuario" required>
+                          <div class="valid-feedback">Usuario Correcto</div>
+                          <div class="invalid-feedback">Usuario Incorrecto</div>
+                     </div>
+                     <div class="input-group mb-3">
+                     <span class="input-group-text" id="perfil">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-lock-fill" viewBox="0 0 16 16">
+                               <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5z"/>
+                              </svg>
+                        </span>
+                          <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Pass" aria-describedaby="Pass" required>
+                          <div class="valid-feedback">Password Correcto</div>
+                          <div class="invalid-feedback">Campo Vacio Incorrecto</div>
+                     
+                     </div>
+                     <div class="d-grid gap-2 py-3">
+                       <button class="btn btn-outilne-primary btn-sm" type="submit" name="ingresar" value="ingresar"> ingresar </button>
+                     </div>
+                  </form>
+                  <!--fin del login-->
+
+                  
+
+      <!--fin de primer contenedor-->
+
+    <!-- inicia navbar -->
+
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(33,97,140);">
+            <div class="container-fluid">
+                  <!-- 1.0 aqui inicia  el cod min: 11:21 -->
+                  <div class="d-flex flex-grow-1">
+                      <span class="w-100 d-lg-none d-block"></span>
+                          <a href="#" class="navbar-brand">MLBB NEWS ES</a>
+                            <div class="w-100 text-left">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#abc1">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                       </div>
+                       <div class="collapse navbar-collapse flex-grow-1 text-right" id="abc1">
+                           <ul class="navbar-nav ms-auto flex-nowrap">
+                               <li class="nav-item">
+                                    <a href="#" class="nav-link active">Notas de parche</a>
+                               </li>
+                               <li class="nav-item">
+                                    <a href="#" class="nav-link">Proximas skins</a>
+                               </li>
+                               <li class="nav-item">
+                                    <a href="#" class="nav-link">Heroes</a>
+                               </li>
+                               <li class="nav-item">
+                                    <a href="#" class="nav-link">Proximas Heroes</a>
+                               </li>
+                               <li class="nav-item">
+                                   <!-- <a href="#" class="nav-link">Conoce Jugadores</a> -->
+                                    <A HREF="https://m.mobilelegends.com/en"> Conoce jugadores </A>
+                               </li>
+                               <li class="nav-item">
+                                    <a href="#" class="nav-link">ESports</a>
+                               </li>
+                               <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipos Profesionales</a>
+                                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                      <li><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="false">EVOS</a></li>
+                                      <li><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">RRQ</a></li>
+                                      <li><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">ALTER EGO</a></li>
+                               </li>
+                           </ul>
+                       </div>
+                  </div>
+                  <!-- 1.1 aqui termina el codigo -->
+            </div>
+        </nav>
+    </div>
+    <!-- termina navbar -->
+
+     <!--inicia carousel-->
+
+     <div id="Sliderb" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#Sliderb" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#Sliderb" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#Sliderb" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/roger.jpg" class="d-block w-100" alt="firstimg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/nana.jpg" class="d-block w-100" alt="secondimg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/yu zhong.jpg" class="d-block w-100" alt="trdimg">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+        </div>
+      
+      <!--termina carousel-->
+
+      <!--div contenedor inicio-->
+      <div class="container text-center mt-5">
+        <h3 class="display-6">Eventos</h3>
+        <div class="row mt-4">
+            <div class="col-sm-12 col-md-4col-lg-4 py-3">
+                <div class="card shadow">
+                    <img src="img/rogerprime.jpg" class="card-img-shadow" alt="dos">
+                    <div class="card-body">
+                        <h4><a>Roger Prime Skin</a></h4>
+                        <a href="#" class="btn btn-sm btn-primary">ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4col-lg-4 py-3">
+                <div class="card shadow">
+                    <img src="img/selena.jpg" class="card-img-shadow" alt="uno">
+                    <div class="card-body">
+                        <h4>Selena Villain Skin</h4>
+                        <a href="#" class="btn btn-sm btn-primary">ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4col-lg-4 py-3">
+                <div class="card shadow">
+                    <img src="img/valen.jpg" class="card-img-shadow" alt="tres">
+                    <div class="card-body">
+                        <h4>Nuevo Heroe Valentina</h4>
+                        <a href="#" class="btn btn-sm btn-primary">ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--contenedor fin-->
+    <div class="text text-left">
+      <A HREF="https://m.mobilelegends.com/en"><h1 class="text-center">Pagina oficial de MLBB</h1></A>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
